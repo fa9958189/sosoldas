@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #333;
+    color: white; /* Define a cor do texto como branco */
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+.moving-line {
+    width: 80px; /* Comece com largura zero */
+    height: 50px; /* Altura da linha */
+    background-color:  #333; /* Cor da linha */
+    position: relative; /* Posição absoluta para animar */
+    top: 15;
+    left: 20;
+    animation: expandLine 15s linear forwards; /* Duração da animação e nome da animação */
+}
+
+@keyframes expandLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%; /* A largura chega a 100% */
+    }
+}
+
+
+
+
+
+.animated-header {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px;
+    text-align: center;
+    animation: header-animation 2s ease-in-out infinite;
+  }
+  
+  @keyframes header-animation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
